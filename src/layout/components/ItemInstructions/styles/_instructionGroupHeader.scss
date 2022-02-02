@@ -1,0 +1,35 @@
+.instruction-group-header-l2{	
+	padding: 5px $paddingSides !important;
+	background-color: $color-UltraLightGray;
+	margin-top: 5px;
+	&.container{
+		@include dir-padding-right(100px);
+	}
+	.text{
+		> *{
+			display: block;
+			&:nth-child(2){
+				color: $color-MediumGray;
+				font-size: 14px;
+			}
+		}			
+	}
+	.list-item-action{
+		@include dir-right($paddingSides);
+		.action{	
+			transition: background-color 0.4s, 
+						opacity 0.4s;
+			background-color: $color-MediumGray;
+			color: white;
+			text-align: center;
+			padding: 4px 8px;
+			border-radius: 10px;
+			&.highlight{
+				background-color: $color-Main;
+			}
+			&.hidden{
+				opacity: 0;
+			}
+		}
+	}
+}

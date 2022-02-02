@@ -1,0 +1,22 @@
+.item-instructions-l1{
+	$paddingSides: 20px;
+
+	width: 100%;
+
+	@include bottom-filler-padding();
+	&.mobile{
+		@include bottom-filler-padding(true);
+	}
+
+	@import "./image";
+	@import "./header";
+	@import "./optionSelect";
+	@import "./customListItem";
+	@import "./body";
+	@import "./submit";
+	@import "./textAreaOption";
+	@import "./instructionGroupHeader";
+	@import "./radioGroup";
+	@import "./checkBoxGroup";
+	@import "./options";
+}

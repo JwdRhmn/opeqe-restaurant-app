@@ -1,0 +1,26 @@
+.submit-l2{		
+	box-shadow: 0 -5px 10px 10px white;	
+	background-color: white;
+	padding: 5px 0;
+	position: fixed;
+	.count{
+		width: 140px;
+		background-color: $color-UltraLightGray;
+		border-radius: 20px;
+		box-shadow: 1px 1px 5px -2px $color-MediumGray;
+		.button{
+			.icon{
+				font-size: 20px;
+			}
+		}
+		.text{
+			width: 40px;
+		}
+	}
+	.add{		
+		width: 50%;
+		@include media-breakpoint-up(sm){
+			width: 250px;
+		}
+	}
+}

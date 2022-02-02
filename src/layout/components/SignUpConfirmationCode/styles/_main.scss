@@ -1,0 +1,49 @@
+.sign-up-confirmation-code-l1{
+	.input{
+		text-align: center;
+		.digit{
+			@include MUI-custom-input();							
+			width: 40px;	
+			margin: 0 10px;					
+			input{
+				text-align: center;
+				font-size: 20px;
+			}
+		}
+	}
+	.timer{
+		margin: 10px 0 0 0;
+		font-size:14px;
+		color: $color-MediumGray;
+		text-align: center;
+		min-height: 50px;
+		& *{
+			color: $color-MediumGray;
+		}
+		.resend{			
+			color: $color-Main;
+			cursor: pointer;
+		}
+		.remaining{
+			transition: opacity 500ms;
+		}
+	}
+	.title{
+		font-size:20px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		text-align: $dir-left;
+	}
+	.sub-title{
+		transition: opacity 400ms;
+		opacity: 0;
+		font-size:16px;
+		margin-bottom: 10px;
+		color: $color-Main;
+		text-align: $dir-left;
+		min-height: 40px;
+	}
+	.button-container{
+		width: 100%;
+	}
+}

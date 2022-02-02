@@ -1,0 +1,35 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    text-align: $dir-left;
+	color: $color-Complementary;
+	
+    *{
+		font-family: $font-main !important;
+	}        
+
+    button{
+        cursor: pointer;
+        *{
+            cursor: pointer;
+        }
+    }
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color: $color-Complementary;
+        *{
+            cursor: pointer;
+        }
+        &:focus {
+            text-decoration: none;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+}
+
+

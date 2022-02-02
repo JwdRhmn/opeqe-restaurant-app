@@ -1,0 +1,65 @@
+.header-l2{
+	position: absolute;
+	top: 100%;
+	text-align: center;	
+	@include dir-left(50%);	
+	background-color: white;
+	width: 310px;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	border-radius: 15px;	
+	box-shadow: 1px 0 15px -5px $color-MediumGray;
+	@include media-breakpoint-up(sm){
+		width: 60%;
+	}
+	> * {
+		display: block;
+	}
+	&.compact{
+		display: block;
+		border-radius: 0;
+		box-sizing: border-box;
+		padding: 10px 50px 10px 0;
+		width: 100%;
+		> * {
+			display: inline-block;
+		}
+		.sub-title{
+			display: none !important;
+		}
+	}
+	.title{		
+		font-size: 16px;
+		font-weight: bold;		
+	}
+	.sub-title{		
+		font-size: 14px;
+		margin-top: 5px;
+		color: $color-DimGray;		
+	}
+	.extras{		
+		margin-top: 5px;		
+		font-size: 14px;
+		> * {
+			display: inline-block;
+			padding: 8px 5px;
+			border-radius: 30px;
+			margin: 4px;
+			.icon{
+				vertical-align: middle;
+				font-size: 18px;
+			}
+		}
+		.gray{
+			background-color: $color-MediumLightGray;
+		}
+		.green{
+			background-color: $color-Main;
+			color: white;
+		}
+		.dark{
+			background-color: $color-Complementary;
+			color: $color-UltraLightGray;
+		}
+	}
+}

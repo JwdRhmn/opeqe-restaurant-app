@@ -1,0 +1,15 @@
+.body-l2{
+	.invite{
+		background-color: $color-Main;		
+		.text{
+			color: $color-UltraLightGray;
+		}
+	}	
+	.reset{
+		background-color: rgba($color-Red, 0.3);	
+		color: $color-Red;	
+		.text{
+			color: $color-Red;
+		}
+	}
+}

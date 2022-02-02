@@ -1,0 +1,30 @@
+.custom-list-item-l2{
+	padding: 0 $paddingSides !important;
+	.item-text{
+		> *{
+			display: block;
+			&:nth-child(2){
+				color: $color-MediumGray;
+				font-size: 14px;
+			}
+		}
+	}
+	.label{
+		width: 100%;
+		.item-control{
+			color: $color-Main;
+			&:hover{
+				background-color: rgba($color-Main, 0.08);
+			}
+			&.disabled{
+				&:hover{
+					background-color: rgba($color-DimGray, 0.08);
+				}
+				color: $color-DimGray;
+			}
+		}
+	}
+	.list-item-action{
+		@include dir-right($paddingSides);
+	}
+}

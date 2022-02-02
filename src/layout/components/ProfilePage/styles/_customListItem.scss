@@ -1,0 +1,8 @@
+.custom-list-item-l2{	
+	color: $color-Main;
+	padding: 15px 5px;
+	.text {
+		color: $color-Complementary;
+		@include dir-margin-left(20px)
+	}
+}

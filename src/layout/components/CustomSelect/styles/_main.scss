@@ -1,0 +1,19 @@
+.custom-select-l1{
+	width: 100%;	
+	> * {
+		@include MUI-custom-input(true);
+	}
+	&.underlined {
+		> * {
+			@include MUI-custom-input();
+		}
+	}
+	.select-input{
+		&:focus{
+			background-color: transparent;
+		}
+	}
+	.label{
+		color: $color-Main !important;
+	}
+}
